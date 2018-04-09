@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.item {
+    /* text-align: center; */
+    flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+}
+
+.hero-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    background-color: steelblue;
+}
+
+.profile-item {
+    text-align: center;
+    flex-basis: 40%;
+    background-color: steelblue;
+    min-width: 300px;
+    min-height: 500px;
+}
+
+.desciption-item {
+    flex-basis: 60%;
+    background-color: steelblue;
+    min-height: 500px;
+    /* as a container */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.desciption-item h1:nth-child(1) {
+    margin-top: 50px;
+}
+
+#profile {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    margin: 0 10px;
+}
+
+.works-container {
+    /* text-align: center; */
+    background-color: #f1f1f1;
+    /* background-color: rgb(255, 252, 177); */
+}
+
+.section-title {
+    flex-basis: 100%;
+}
+
+.section-title,
+.works-item h1 {
+    text-align: center;
+}
+
+.works-item {
+    width: 480px;
+    border: 2px solid rgb(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    transition-duration: 0.8s;
+}
+
+.works-img {
+    width: 480px;
+    height: 320px;
+}
+
+.interests-container {
+    max-width: 1000px;
+    justify-content: space-around;
+}
+
+.interests-subtitle {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.interests-item {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.interests-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.interests-item h3 {
+    text-align: center;
+}
+
+.footer-container{
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .hero-container {
+        background-attachment: scroll;
+    }
+    .desciption-item {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-height: 750px) and (orientation:landscape) {
+    .hero-container {
+        height: 512px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .works-img {
+        width: 350px;
+        height: 240px;
+    }
+
+    .works-item {
+        width: 350px;
+        border: 2px solid rgb(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .works-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .works-item {
+        width: 300px;
+        border: 2px solid rgb(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+    }
+}
