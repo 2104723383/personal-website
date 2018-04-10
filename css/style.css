@@ -16,10 +16,6 @@ a {
     height: 100vh;
     color: white;
     text-align: center;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0.3))), url('../images/hero-image.jpg');
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.3) 100%), url('../images/hero-image.jpg');
-    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.3) 100%), url('../images/hero-image.jpg');
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.3) 100%), url('../images/hero-image.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
