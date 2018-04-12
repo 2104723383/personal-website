@@ -1,14 +1,28 @@
 body {
     margin: 0;
-    font-family: 'Noto Sans TC';
+    /* font-family: 'Noto Sans TC'; */
+    font-family: Courier New, Courier, monospace;    
 }
 
 p {
-    font-family: 'Noto Sans TC';
+    /* font-family: 'Noto Sans TC';
+     */
+    font-family: Courier New, Courier, monospace;         
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    opacity: 0;
+    -webkit-transition-duration: 1.6s;
+    -o-transition-duration: 1.6s;
+    transition-duration: 1.6;
+}
+
+.container:nth-child(1) {
+    opacity: 1;
 }
 
 .hero-container {
@@ -76,6 +90,7 @@ a {
 
 #table-description {
     display: none;
+    opacity: 0;
     -webkit-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -98,14 +113,14 @@ tr:nth-child(odd) {
 
 tr:nth-child(1) {
     background-color: #252525;
-    color:#fff;
+    color: #fff;
 }
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-tr:hover{
+tr:hover {
     opacity: 0.6;
 }
 

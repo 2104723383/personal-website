@@ -8,6 +8,7 @@ function change_div() {
     if (count % 2 == 0) {
         text_description.style.display = "none";
         table_description.style.display = "block";
+        table_description.style.opacity = 1;        
         read_more_btn.firstChild.data = "Back";
     } else {
         table_description.style.display = "none";
